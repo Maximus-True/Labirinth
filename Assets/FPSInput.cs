@@ -16,8 +16,6 @@ public class FPSInput : MonoBehaviour
     private CharacterController _charController;
     public Animator anime;
     private float Health;
-    public bool GrandKey;
-    public bool key;
 
     public HealthBar _healthBar;
 
@@ -27,8 +25,7 @@ public class FPSInput : MonoBehaviour
         Health = MaxHealth;
         _charController = GetComponent<CharacterController>();
         gameOver.Close();
-        //_healthBar = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<HealthBar>();    
-        GrandKey = false;
+        //_healthBar = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<HealthBar>();      
     }
 
     /*private IEnumerator TimerGetDamage()
@@ -43,7 +40,7 @@ public class FPSInput : MonoBehaviour
         float deltaZ = Input.GetAxis("Vertical") * speed;
 
         if /*((IsGrounded == true) &*/ (Input.GetKey(KeyCode.Space))/*)*/
-        { 
+        {
             Gravitation = jumpspeed;
         }
         else

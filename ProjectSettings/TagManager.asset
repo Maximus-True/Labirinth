@@ -6,10 +6,6 @@ TagManager:
   tags:
   - Fire
   - TagLight
-  - HealthBar
-  - GrandDoor
-  - Item
-  - Inventory Manager
   layers:
   - Default
   - TransparentFX
